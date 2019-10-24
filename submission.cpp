@@ -107,6 +107,10 @@ answer greedy2(problem p){
 			}
 		}
 	}
+	answer b  = greedy1(p);
+	if(b.tprofit > totalprofit){
+		return b;
+	}
 	e = std::chrono::system_clock::now();
   std::chrono::duration<double> els = e - s;
 	answer a;
