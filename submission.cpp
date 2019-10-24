@@ -55,7 +55,7 @@ answer greedy1(problem p){
 	int currweight = 0;
 	for(int i = 0 ; i < elements.size() ; i++){
 		if(elements[i].weight<=capacity){
-			if((currweight+elements[i].weight)<capacity){
+			if((currweight+elements[i].weight)<=capacity){
 				totalprofit+=elements[i].profit;
 				currweight+=elements[i].weight;
 				//cout << "currweight: " << currweight << endl;
@@ -101,7 +101,7 @@ answer greedy2(problem p){
 	int currweight = 0;
 	for(int i = 0 ; i < elements.size() ; i++){
 		if(elements[i].weight<=capacity){
-			if((currweight+elements[i].weight)<capacity){
+			if((currweight+elements[i].weight)<=capacity){
 				totalprofit+=elements[i].profit;
 				currweight+=elements[i].weight;
 			}
