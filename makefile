@@ -2,7 +2,7 @@ Q=submission
 FLAGS=g++ -Wall -Wextra -std=c++14 -g -DDEBUG
 
 all: $(Q)
-	./$(Q) smallInput.txt 
+	./$(Q) mediumInput.txt mediumOutputBacktracking.txt 2
 
 $(Q): $(Q).o
 	$(FLAGS) -o $(Q) $(Q).o
